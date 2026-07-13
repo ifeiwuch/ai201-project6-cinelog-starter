@@ -33,6 +33,6 @@ I claude code to read a summarize the files, and overall codebase in the beginni
 
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
-The .env file conflicted, but all i had to do was add the pytest cache. I also needed to add back the WatchlistEntry in models.py because it dissapeared.
+This PR adds a watchlist feature so users can save films they want to watch later (separate from their collection of films they've already watched), defaulting new entries to public visibility and sorting by date added instead of alphabetically; to test it, start the app, add a film via `POST /watchlist/<user_id>/add` with a `film_id`, confirm you get a 201 and can't add the same film twice or a nonexistent one, then hit `GET /watchlist/<user_id>` to confirm the most recently added film shows up first. The .env file conflicted, but all i had to do was add the pytest cache. I also needed to add back the WatchlistEntry in models.py because it dissapeared.
 
 ![alt text](image.png)
