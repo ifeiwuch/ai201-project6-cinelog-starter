@@ -34,3 +34,5 @@ I claude code to read a summarize the files, and overall codebase in the beginni
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
 The .env file conflicted, but all i had to do was add the pytest cache. I also needed to add back the WatchlistEntry in models.py because it dissapeared.
+
+![alt text](image.png)
